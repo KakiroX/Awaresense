@@ -39,8 +39,8 @@ void loop() {
   digitalWrite(trigPin2, LOW);
   duration2 = pulseIn(echoPin2, HIGH);
   d2 = duration2 * SOUND_SPEED/2;
-  s = 330 * pow(1.011, -0.8 * d) + 1;
-  s2 = 330 * pow(1.011, -0.8 * d2) + 1;
+  s = 330 * pow(1.013, -0.8 * d) + 1;
+  s2 = 330 * pow(1.013, -0.8 * d2) + 1;
   if (s>255){
   s = 255;
   }
